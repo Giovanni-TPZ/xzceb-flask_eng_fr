@@ -1,4 +1,3 @@
-import json
 import os
 from ibm_watson import LanguageTranslatorV3
 from ibm_cloud_sdk_core.authenticators import IAMAuthenticator
@@ -15,7 +14,6 @@ language_translator = LanguageTranslatorV3(
     authenticator=authenticator
 )
 
-language_translator.set_disable_ssl_verification(True)
 language_translator.set_service_url(url)
 
 
